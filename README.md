@@ -3,6 +3,10 @@
 This repository documents my personal **homelab infrastructure**,  
 including server setup, automation scripts, and configuration notes.  
 
+It serves as a showcase of my experience with **system administration,  
+networking, and automation**, while also providing a knowledge base for  
+future expansion.
+
 ---
 
 ## ✨ Features
@@ -17,18 +21,18 @@ including server setup, automation scripts, and configuration notes.
 
 ## 🛠️ Tech Stack
 
-- **OS:** Unraid (Supermicro-based hardware)  
-- **Networking:** Unifi UDM Pro, PoE switches, APs  
+- **OS / Server:** Unraid on Supermicro hardware (quiet, low-power, NVMe support)  
+- **Networking:** Unifi UDM Pro, PoE switches, Access Points, cameras  
 - **Storage:** HDD + NVMe cache, RAID configs  
-- **Containers:** Docker Compose (Plex, Nextcloud, etc.)  
+- **Containers:** Docker Compose (Plex, Nextcloud, Transmission, Dev stacks)  
 - **Cloud:** Cloudflare Tunnel + DNS proxy  
-- **Automation:** Bash / PowerShell scripts  
+- **Automation:** Bash, PowerShell, Python scripts  
 
 ---
 
 ## 📊 Diagram
 
-![Homelab Diagram](./assets/homelab-diagram.png)
+*(to be added – example Unifi topology / server diagram with draw.io or Excalidraw)*  
 
 ---
 
@@ -40,15 +44,50 @@ including server setup, automation scripts, and configuration notes.
 
 ---
 
+## 📂 Repository Structure
+
+```
+
+homelab/
+├─ README.md        <- main documentation
+├─ docs/            <- detailed notes (unraid.md, unifi.md, docker.md, cloudflare.md)
+├─ scripts/         <- automation scripts (bash, ps1, py)
+├─ configs/         <- anonymized config samples (nginx.conf, firewall.json, docker-compose.yml)
+└─ assets/          <- screenshots, diagrams
+
+```
+
+---
+
 ## 📌 Roadmap
 
-- [ ] Add Ansible automation  
+- [ ] Add Ansible automation for Docker stack deployment  
 - [ ] Expand monitoring with Prometheus + Grafana  
 - [ ] Document UPS + solar integration  
-- [ ] More Docker stacks  
+- [ ] Add more Docker stacks (media, AI, productivity tools)  
+- [ ] Publish more sysadmin notes (network hardening, backup strategies)  
+
+---
+
+## 🌍 Context
+
+This homelab allows me to:  
+- Test and deploy modern self-hosted services  
+- Automate routine sysadmin tasks  
+- Experiment with networking, storage, and virtualization  
+- Maintain a safe environment for learning and prototyping  
+
+It also forms the foundation for projects in the **HSWLP ecosystem**,  
+where my development and infrastructure knowledge meet.  
 
 ---
 
 ## 📜 License
 
-Released under the **MIT License**.
+Released under the **MIT License**.  
+
+---
+
+**Homelab** is both my personal playground and a practical environment  
+for exploring system administration, automation, and cloud-native workflows.
+```
