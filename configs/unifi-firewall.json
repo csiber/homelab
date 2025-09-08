@@ -1,0 +1,20 @@
+{
+    "firewall_rules": [
+        {
+            "rule_name": "Block IoT to LAN",
+            "action": "drop",
+            "protocol": "all",
+            "src_network": "IoT_Network",
+            "dst_network": "LAN_Network",
+            "enabled": true
+        },
+        {
+            "rule_name": "Allow LAN to IoT",
+            "action": "accept",
+            "protocol": "all",
+            "src_network": "LAN_Network",
+            "dst_network": "IoT_Network",
+            "enabled": true
+        }
+    ]
+}

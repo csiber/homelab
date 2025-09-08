@@ -1,0 +1,28 @@
+# docker-compose.yml – Example stack for Plex + Nextcloud
+
+version: "3.8"
+services:
+  plex:
+    image: linuxserver/plex
+    container_name: plex
+    network_mode: host
+    volumes:
+      - ./data/plex/config:/config
+      - ./data/plex/media:/media
+    restart: unless-stopped
+
+  nextcloud:
+    image: linuxserver/nextcloud
+    container_name: nextcloud
+    ports:
+      - "8081:80"
+    volumes:
+      - ./data/nextcloud/config:/config
+      - ./data/nextcloud/data:/data
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    depends_on:
+      - db
