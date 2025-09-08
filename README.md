@@ -32,7 +32,7 @@ future expansion.
 
 ## 📊 Diagram
 
-*(to be added – example Unifi topology / server diagram with draw.io or Excalidraw)*  
+*(to be added – later)*  
 
 ---
 
