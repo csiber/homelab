@@ -17,6 +17,12 @@ The goal of this homelab is to provide:
 - [📡 Unifi Network](./unifi)  
 - [🐳 Docker Stacks](./docker)  
 - [☁️ Cloudflare Integration](./cloudflare)  
+- [📊 Monitoring & Logs](./monitoring)  
+- [🛡️ Security & Hardening](./security)  
+- [💾 Backup & Recovery](./backup)  
+- [⚙️ Hardware Overview](./hardware)  
+- [📖 Lessons Learned](./lessons)  
+
 
 ---
 
